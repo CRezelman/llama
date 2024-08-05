@@ -28,7 +28,7 @@ python -m venv venv
 Available models can be found [here](https://huggingface.co/TheBloke/NexusRaven-V2-13B-GGUF "NexusRaven"). This repo currently uses `nexusraven-v2-13b.Q5_K_M.gguf`
 
 ```powershell
-huggingface-cli download TheBloke/NexusRaven-V2-13B-GGUF nexusraven-v2-13b.Q5_K_M.gguf --local-dir ./models --local-dir-use-symlinks False
+huggingface-cli download TheBloke/NexusRaven-V2-13B-GGUF nexusraven-v2-13b.Q5_K_M.gguf --local-dir ./app/llm/models --local-dir-use-symlinks False
 ```
 
 ## Virtual Environment
