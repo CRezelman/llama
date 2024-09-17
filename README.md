@@ -2,6 +2,19 @@
 
 Locally run LLaMa model
 
+## Requirements
+1. Install Visual Studio Installer. Select the following:
+   - Visual Studio Community 2022
+   - Visual Studio Build Tools >> Desktop Development with C++. See [here](https://medium.com/@piyushbatra1999/installing-llama-cpp-python-with-nvidia-gpu-acceleration-on-windows-a-short-guide-0dfac475002d)
+
+2. CMake
+3. Cuda Toolkit (I use v12.6)
+4. Set ENV Variables before installinng `python-cpp-llama` to enable GPU Acceleration
+
+```powershell
+$env:FORCE_CMAKE='1'; $env:CMAKE_ARGS='-DGGML_CUDA=on -DLLAMA_AVX=off -DLLAMA_AVX2=off -DLLAMA_FMA=off -DCMAKE_GENERATOR_TOOLSET=cuda="C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6"'
+```
+
 ## Getting Started
 
 Ensure you have Python 3 installed.
